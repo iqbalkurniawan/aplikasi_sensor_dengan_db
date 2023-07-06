@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/pp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Profile Picture" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="1"
+        android:alignmentMode="alignBounds"
+        android:useDefaultMargins="true"
+        android:layout_marginTop="86dp">
+
+        <TextView
+            android:id="@+id/textX"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textSize="16sp"
+            android:text="Data X"
+            android:padding="8dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textY"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textSize="16sp"
+            android:text="Data Y"
+            android:padding="8dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textZ"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textSize="16sp"
+            android:text="Data Z"
+            android:padding="8dp"
+            android:gravity="center"/>
+
+    </GridLayout>
+
+
+    <Button
+        android:id="@+id/tampil"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data Log"
+        android:layout_marginTop="56dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dibuat oleh Iqbal Kurniawan"
+        android:layout_marginTop="26dp"
+        android:textColor="#000000" />
+</LinearLayout>
